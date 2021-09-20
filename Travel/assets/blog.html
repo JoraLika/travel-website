@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <!--Font Awesome Css-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+
+  <title>Travel Guide</title>
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="stylesheet" href="blog.css">
+
+</head>
+
+<body>
+  <!--Navigation-->
+  <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+    <div class="container-fluid">
+      <a class="navbar-brand text-black h2 mb-0" href="#">TRAVEL GUIDE</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item bg-light dropdown">
+            <a class="nav-link dropdown-toggle" href="#destinations" id="navbarDropdown" role="button"
+              data-toggle="dropdown">Destinations</a>
+            <div class="dropdown-menu bg-light" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item dropdown-item-style" href="#">France</a>
+              <a class="dropdown-item dropdown-item-style" href="#">Germany</a>
+              <a class="dropdown-item dropdown-item-style" href="#">Australia</a>
+              <a class="dropdown-item dropdown-item-style" href="#">Japan</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#discount" data-toggle="modal" data-target="#exampleModal">Discount</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="blog.html">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+        </ul>
+        <ul class="navbar-nav sm-icons">
+          <li class="nav-item"><a class="nav-link" data-toggle="tooltip" title="Facebook"
+              href="https://www.facebook.com/">
+              <i class="fab fa-facebook-f"></i></a></li>
+
+          <li class="nav-item"><a class="nav-link" data-toggle="tooltip" title="Instagram"
+              href="https://www.instagram.com/">
+              <i class="fab fa-instagram"></i></a></li>
+
+          <li class="nav-item"><a class="nav-link" data-toggle="tooltip" title="Twitter"
+              href="https://www.twitter.com/">
+              <i class="fab fa-twitter"></i></a>
+          </li>
+
+          <li class="nav-item"><a class="nav-link" data-toggle="tooltip" title="Pinterest"
+              href="https://www.pinterest.com">
+              <i class="fab fa-pinterest-p"></i></a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Modal -->
+  <div class="modal" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title" id="exampleModalLabel">Enter Your Email And Get</h2>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body bg-light">
+          </strong>
+          <h1 class="text-center">10% OFF</h1>
+          <h6 class="text-center">with order 500€ or more, by subscribing right now.</h6>
+          <form>
+            <div class="row">
+              <div class="col pr-0">
+                <input type="email" class="form-control " id="inputEmail4" placeholder="Email">
+              </div>
+              <div class="col pl-0">
+                <button type="submit" class="btn btn-primary">SUBSCRIBE</button>
+              </div>
+            </div>
+          </form>
+          <a href="#" class="modal-link text-center pt-2" data-dismiss="modal">No Thanks</a>
+          <p class="text-center pt-2">Copyright @TravelGuide 2021.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--Banner-->
+  <figure>
+    <div class="fixed-wrap">
+      <div id="fixed">
+      </div>
+    </div>
+  </figure>
+
+  <div class="caption text-center">
+    <h1 class="display-2 mx-auto">Our Stories</h1>
+    <a href="index.html">Home</a><span class="mx-2 text-white"> •</span>
+    <span class="text-white">Blog</span>
+  </div>
+  <!--Filters-->
+  <div class="container">
+    <div class="nav-scroller py-1 mb-2">
+      <nav class="nav d-flex justify-content-between">
+        <a class="p-2 link-secondary" href="#">World</a>
+        <a class="p-2 link-secondary" href="#">U.S.</a>
+        <a class="p-2 link-secondary" href="#">Technology</a>
+        <a class="p-2 link-secondary" href="#">Design</a>
+        <a class="p-2 link-secondary" href="#">Culture</a>
+        <a class="p-2 link-secondary" href="#">Business</a>
+        <a class="p-2 link-secondary" href="#">Politics</a>
+        <a class="p-2 link-secondary" href="#">Opinion</a>
+        <a class="p-2 link-secondary" href="#">Science</a>
+        <a class="p-2 link-secondary" href="#">Health</a>
+        <a class="p-2 link-secondary" href="#">Style</a>
+        <a class="p-2 link-secondary" href="#">Travel</a>
+      </nav>
+    </div>
+  </div>
+  <!--Card-->
+  <div class="container container-card text-center">
+    <div class="row flex-wrap">
+      <div class="col-md-6 col-lg-4 container_photo ">
+        <div class="see-more text-center">
+          <span class="fa fa-eye"></span>
+        </div>
+        <article class="text-left">
+          <h2>Post Title</h2>
+          <h4>This is a wider card with supporting text below as a natural lead-in to additional
+            content.</h4>
+        </article>
+        <img src="img/1.png" alt="image">
+      </div>
+      <div class="col-md-6 col-lg-4 container_photo">
+        <div class="see-more text-center">
+          <span id="click" class="fa fa-eye"></span>
+        </div>
+        <article class="text-left">
+          <h2>Post Title</h2>
+          <h4>This is a wider card with supporting text below as a natural lead-in to additional
+            content.</h4>
+        </article>
+        <img src="img/2.png" alt="image">
+      </div>
+      <div class="col-md-6 col-lg-4 container_photo">
+        <div class="see-more text-center">
+          <span class="fa fa-eye"></span>
+        </div>
+        <article class="text-left">
+          <h2>Post Title</h2>
+          <h4>This is a wider card with supporting text below as a natural lead-in to additional
+            content.</h4>
+        </article>
+        <img src="img/3.png" alt="image">
+      </div>
+    </div>
+  </div>
+  <!--Articles-->
+  <div class="container pt-4">
+    <div class="row g-5">
+      <div class="col-md-8">
+        <h3 class="pt-2 pb-2 mb-4 italic border-bottom">
+          What's Trending
+        </h3>
+        <div class="card mb-3">
+          <div class="row no-gutters">
+            <div class="col-md-4">
+              <img src="img/blog3.png" class="card-img" alt="image">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">How to pack with just a carry-on suitcase?</h5>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                  content. This content is a little bit longer.</p>
+                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card mb-3">
+          <div class="row no-gutters">
+            <div class="col-md-4">
+              <img src="img/blog4.png" class="card-img" alt="image">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">Best destinations for families/couples/college students/etc.</h5>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                  content. This content is a little bit longer.</p>
+                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card mb-3">
+          <div class="row no-gutters">
+            <div class="col-md-4">
+              <img src="img/blog5.png" class="card-img" alt="image">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">Top 10 destinations for budget travelers</h5>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                  content. This content is a little bit longer.</p>
+                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <article class="blog-post">
+          <h2 class="blog-post-title">Latest Articles</h2>
+          <p class="blog-post-meta">January 1, 2021 by <a href="#">Mark</a></p>
+          <p>This blog post shows a few different types of content that’s supported and styled with Bootstrap. Basic
+            typography, lists, tables, images, code, and more are all supported as expected.</p>
+          <hr>
+        </article>
+        <div class="container">
+          <div class="row">
+            <div class="card-columns">
+              <div class="card">
+                <img src="img/blog.png" class="card-img-top" alt="image">
+                <div class="card-body">
+                  <h5 class="card-title">How To Plan Your Vacation</h5>
+                  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
+                    additional content. This content is a little bit longer.</p>
+                  <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                </div>
+              </div>
+              <div class="card">
+                <img src="img/blog7.png" class="card-img-top" alt="image">
+                <div class="card-body">
+                  <h5 class="card-title">Tips for booking cheap flights</h5>
+                  <p class="card-text">This is another card with title and supporting text below. This card has some
+                    additional content to make it slightly taller overall.</p>
+                  <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                </div>
+              </div>
+              <div class="card">
+                <img src="img/blog2.png" class="card-img-top" alt="image">
+                <div class="card-body">
+                  <h5 class="card-title">Top 10 Most Beautiful Places In The World</h5>
+                  <p class="card-text">This card has supporting text below as a natural lead-in to additional content.
+                  </p>
+                  <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                </div>
+              </div>
+              <div class="card text-center p-3">
+                <blockquote class="blockquote mb-0">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat.</p>
+                  <footer class="blockquote-footer text-white">
+                    <small>
+                      Someone famous in <cite title="Source Title">Source Title</cite>
+                    </small>
+                  </footer>
+                </blockquote>
+              </div>
+              <div class="card text-center">
+                <div class="card-body">
+                  <h5 class="card-title">Travel mistakes to avoid</h5>
+                  <p class="card-text">This card has a regular title and short paragraphy of text below it.</p>
+                  <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                </div>
+              </div>
+              <div class="card">
+                <img src="img/blog6.png" class="card-img-top" alt="image">
+              </div>
+              <div class="card p-3 text-center">
+                <blockquote class="blockquote mb-0">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                  <footer class="blockquote-footer">
+                    <small class="text-white">
+                      Someone famous in <cite title="Source Title">Source Title</cite>
+                    </small>
+                  </footer>
+                </blockquote>
+              </div>
+              <div class="card">
+                <img src="img/blog8.png" class="card-img-top" alt="image">
+                <div class="card-body">
+                  <h5 class="card-title">How to stay healthy while traveling</h5>
+                  <p class="card-text">This is another card with title and supporting text below. This card has some
+                    additional content to make it slightly taller overall.</p>
+                  <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <article class="blog-post">
+          <h3>Don’t Miss</h3>
+          <p>This is some additional paragraph placeholder content. It's a slightly shorter version of the other highly
+            repetitive body text used throughout.</p>
+          <div class="card mb-3">
+            <div class="row no-gutters">
+              <div class="col-md-4">
+                <img src="img/blog9.png" class="card-img" alt="image">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Top 10 destinations to visit this summer</h5>
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                    additional content. This content is a little bit longer.</p>
+                  <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <table class="table">
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Upvotes</th>
+                <th>Downvotes</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Bali</td>
+                <td>10</td>
+                <td>11</td>
+              </tr>
+              <tr>
+                <td>Cappadocia</td>
+                <td>4</td>
+                <td>3</td>
+              </tr>
+              <tr>
+                <td>Seoul</td>
+                <td>7</td>
+                <td>9</td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <tr>
+                <td>Totals</td>
+                <td>21</td>
+                <td>23</td>
+              </tr>
+            </tfoot>
+          </table>
+        </article>
+
+        <nav class="blog-pagination" aria-label="Pagination">
+          <a class="btn btn-outline-primary text-white" href="#">Older</a>
+          <a class="btn btn-outline-secondary disabled" href="#" tabindex="-1" aria-disabled="true">Newer</a>
+        </nav>
+      </div>
+
+      <div class="col-md-4">
+        <div class="position-sticky" style="top: 2rem;">
+          <div class="p-4 mb-3 bg-light rounded">
+            <h4 class="italic">About</h4>
+            <p class="mb-0">Customize this section to tell your visitors a little bit about your publication, writers,
+              content, or something else entirely. Totally up to you.</p>
+          </div>
+
+          <div class="p-4">
+            <h4 class="italic">Archives</h4>
+            <ol class="list-unstyled mb-0">
+              <li><a href="#">March 2021</a></li>
+              <li><a href="#">February 2021</a></li>
+              <li><a href="#">January 2021</a></li>
+              <li><a href="#">December 2020</a></li>
+              <li><a href="#">November 2020</a></li>
+              <li><a href="#">October 2020</a></li>
+              <li><a href="#">September 2020</a></li>
+              <li><a href="#">August 2020</a></li>
+              <li><a href="#">July 2020</a></li>
+              <li><a href="#">June 2020</a></li>
+              <li><a href="#">May 2020</a></li>
+              <li><a href="#">April 2020</a></li>
+            </ol>
+          </div>
+          <div class="p-4">
+            <h4 class="italic">Elsewhere</h4>
+            <ol class="list-unstyled">
+              <li><a href="#">GitHub</a></li>
+              <li><a href="#">Twitter</a></li>
+              <li><a href="#">Facebook</a></li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Back to top button -->
+  <button type="button" class="btn btn-danger btn-floating btn-lg" id="btn-back-to-top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+  <!--Footer-->
+  <footer>
+    <div class="container-fluid">
+      <div class="row text-center">
+        <div class="col-md-4">
+          <hr class="light">
+          <h3 class="footer-heading mb-4">
+            About Travel Guide
+          </h3>
+          <hr class="light">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Saepe pariatur reprehenderit vero atque, consequatur id ratione, et non dignissimos culpa?
+            Ut veritatis, quos illum totam quis blanditiis, minima minus odio!
+          </p>
+        </div>
+        <div class="col-md-4">
+          <hr class="light">
+          <h3 class="footer-heading mb-4">
+            Navigations
+          </h3>
+          <hr class="light">
+          <p href="#">Home</p>
+          <p href="#">Destination</p>
+          <p href="#">Services</p>
+          <p href="#">Blog</p>
+          <p href="#">Contact Us</p>
+          <p href="#">Privacy Policy</p>
+        </div>
+        <div class="col-md-4">
+          <hr class="light">
+          <h3 class="footer-heading mb-4">
+            Subscribe Newsletter
+          </h3>
+          <hr class="light">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit minima minus odio.
+          </p>
+          <div class="input-group mb-4">
+            <input type="text" class="form-control" placeholder="Enter Email" aria-label="Enter Email"
+              aria-describedby="basic-addon2">
+            <div class="input-group-append">
+              <button class="btn btn-outline-secondary" type="button">Send</button>
+            </div>
+          </div>
+          <div class="col-12">
+            <hr class="light">
+            <h5>&copy; TravelGuide.com</h5>
+          </div>
+        </div>
+      </div>
+  </footer>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+  <!--<script src="index.js"></script>-->
+
+
+  <!--<script>
+    //SearchBar
+    $(document).ready(function () {
+      $("#myinput").on("keyup", function () {
+        var value = $(this).val().toLowerCase();
+
+        var design = $("#card1");
+        var culture = $("#card2");
+        var world = $("#card3");
+
+        if (design.attr('name').includes(value)) $(design).show();
+        else $(design).hide();
+
+        if (value === '') {
+          $(design).show();
+          $(culture).show();
+          $(world).show();
+        }
+        if (culture.attr('name').includes(value)) $(culture).show();
+        else $(culture).hide();
+
+        if (value === '') {
+          $(design).show();
+          $(culture).show();
+          $(world).show();
+        }
+        if (world.attr('name').includes(value)) $(world).show();
+        else $(world).hide();
+
+        if (value === '') {
+          $(design).show();
+          $(culture).show();
+          $(world).show();
+        }
+      });
+    });
+  </script>-->
+  <script>
+    //Get the button
+    let mybutton = document.getElementById("btn-back-to-top");
+
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function () {
+      scrollFunction();
+    };
+
+    function scrollFunction() {
+      if (
+        document.body.scrollTop > 20 ||
+        document.documentElement.scrollTop > 20
+      ) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+    // When the user clicks on the button, scroll to the top of the document
+    mybutton.addEventListener("click", backToTop);
+
+    function backToTop() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+  </script>
+
+  <script>
+    //Tooltip
+    $(function () {
+      $('[data-toggle="tooltip"]').tooltip()
+    })
+  </script>
+
+</body>
+
+</html>
